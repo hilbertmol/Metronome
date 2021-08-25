@@ -1,0 +1,16 @@
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\bin\Debug\netstandard2.0\Metronome.deps.json
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\bin\Debug\netstandard2.0\Metronome.dll
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\bin\Debug\netstandard2.0\ref\Metronome.dll
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\bin\Debug\netstandard2.0\Metronome.pdb
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\Metronome.csproj.AssemblyReference.cache
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\Metronome.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\Page1.xaml.g.cs
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\Metronome.AssemblyInfoInputs.cache
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\Metronome.AssemblyInfo.cs
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\Metronome.csproj.CoreCompileInputs.cache
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\Metronome.dll
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\ref\Metronome.dll
+C:\Users\lukasz\Source\Repos\Metronome\Metronome\Metronome\obj\Debug\netstandard2.0\Metronome.pdb

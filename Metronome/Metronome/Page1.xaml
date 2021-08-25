@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Metronome" 
+             x:Class="Metronome.Page1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <ContentView Margin="0" 
+                            BackgroundColor="White">
+                <Image x:Name="imgMetronome" 
+                       Source="{local:ImageResource Metronome.images.metronome.png}"
+                       Aspect="AspectFill"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"/>
+            </ContentView>
+            <Grid 
+                  BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.25*"/>
+                    <ColumnDefinition Width="0.25*"/>
+                    <ColumnDefinition Width="0.25*"/>
+                    <ColumnDefinition Width="0.25*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Rectangle x:Name="rect1"
+                           Grid.Column="0"
+                           Margin="20"
+                           BackgroundColor="LightGray"/>
+                <Rectangle Grid.Column="1"
+                           Margin="20"
+                    BackgroundColor="LightGray"/>
+                <Rectangle Grid.Column="2"
+                           Margin="20"
+                    BackgroundColor="LightGray"/>
+                <Rectangle Grid.Column="3"
+                           Margin="20"
+                    BackgroundColor="LightGray"/>
+            </Grid>
+            <RelativeLayout Margin="0" 
+                            BackgroundColor="White"
+                            VerticalOptions="End">
+                <Label Text="Tempo" 
+                       FontSize="15"
+                       TextColor="White"  
+                       HorizontalTextAlignment="Center"
+                       BackgroundColor="Black"
+                       RelativeLayout.XConstraint="20"
+                       RelativeLayout.YConstraint="20"
+                       RelativeLayout.HeightConstraint="20"
+                       RelativeLayout.WidthConstraint="100"/>
+                <Entry x:Name="TempoBPM"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center"
+                       Keyboard="Numeric"                       
+                       MaxLength="3"
+                       FontSize="25"
+                       RelativeLayout.XConstraint="20"
+                       RelativeLayout.YConstraint="70"
+                       RelativeLayout.HeightConstraint="50"
+                       RelativeLayout.WidthConstraint="50"/>
+                <Label Text="Taktart" 
+                       FontSize="15"
+                       TextColor="White"  
+                       HorizontalTextAlignment="Center"
+                       BackgroundColor="Black"
+                       RelativeLayout.XConstraint="150"
+                       RelativeLayout.YConstraint="20"
+                       RelativeLayout.HeightConstraint="20"
+                       RelativeLayout.WidthConstraint="100"/>
+                <Entry x:Name="entrZaehlzeit"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center"
+                       Keyboard="Numeric"
+                       MaxLength="1"
+                       FontSize="25"
+                       RelativeLayout.XConstraint="150"
+                       RelativeLayout.YConstraint="70"
+                       RelativeLayout.HeightConstraint="50"
+                       RelativeLayout.WidthConstraint="50"/>
+                <Label Text="/" 
+                       FontSize="30"
+                       TextColor="Black"  
+                       HorizontalTextAlignment="Center"
+                       RelativeLayout.XConstraint="180"
+                       RelativeLayout.YConstraint="70"
+                       RelativeLayout.HeightConstraint="50"
+                       RelativeLayout.WidthConstraint="70"/>
+                <Entry x:Name="entrNotenwert"
+                       HorizontalOptions="FillAndExpand"
+                       HorizontalTextAlignment="Center"
+                       Keyboard="Numeric"
+                       MaxLength="1"
+                       FontSize="25"
+                       RelativeLayout.XConstraint="225"
+                       RelativeLayout.YConstraint="70"
+                       RelativeLayout.HeightConstraint="50"
+                       RelativeLayout.WidthConstraint="50"/>
+                <Slider x:Name="SliderBPM"
+                        Minimum="0"
+                        Maximum="200"
+                        Scale="1.5"
+                        Margin="10"
+                        ThumbColor="White"
+                        BackgroundColor="Black"
+                        RelativeLayout.XConstraint="60"
+                        RelativeLayout.YConstraint="250"
+                        RelativeLayout.HeightConstraint="50"
+                        RelativeLayout.WidthConstraint="280"
+                        ValueChanged="Slider_ValueChanged"/>
+                <Image x:Name="btnPlay"
+                       Source="{local:ImageResource Metronome.images.play.png}"
+                       Margin="0"
+                       RelativeLayout.XConstraint="150"
+                       RelativeLayout.YConstraint="140"
+                       RelativeLayout.HeightConstraint="100"
+                       RelativeLayout.WidthConstraint="100">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_PlayTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image x:Name="btnStop"
+                       Source="{local:ImageResource Metronome.images.stop.png}"
+                       Margin="0"
+                       RelativeLayout.XConstraint="150"
+                       RelativeLayout.YConstraint="140"
+                       RelativeLayout.HeightConstraint="100"
+                       RelativeLayout.WidthConstraint="100">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_StopTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

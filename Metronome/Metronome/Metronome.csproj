@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bottle_sound.mp3" />
+    <None Remove="images\metronome.png" />
+    <None Remove="images\play.png" />
+    <None Remove="images\stop.png" />
+    <None Remove="sticks_high.wav" />
+    <None Remove="sticks_low.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="images\play.png" />
+    <EmbeddedResource Include="images\stop.png" />
+    <EmbeddedResource Include="sounds\bottle_sound.mp3" />
+    <EmbeddedResource Include="images\metronome.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.5.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Page1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
